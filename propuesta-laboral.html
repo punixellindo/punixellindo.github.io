@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusión Laboral | Vejeces en Chile</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        /* Efecto de Pantalla Dividida (Split Screen) */
+        .split-layout {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .sticky-image-pane {
+            position: sticky;
+            top: 70px; /* Compensa la altura del navbar */
+            height: calc(100vh - 70px);
+            overflow: hidden;
+        }
+        
+        .tall-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen llene el espacio sin deformarse */
+            object-position: center; 
+        }
+
+        .scrolling-content-pane {
+            padding: 4rem 3rem;
+            background-color: #fff;
+        }
+
+        .content-block {
+            margin-bottom: 4rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Ajustes para celulares (se apila normal) */
+        @media (max-width: 991.98px) {
+            .sticky-image-pane {
+                position: relative;
+                top: 0;
+                height: 60vh; /* En celular ocupa menos alto */
+            }
+            .scrolling-content-pane {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">CHILE ENVEJECE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-warning" href="index.html">← Volver al Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-0">
+        <div class="row g-0 split-layout">
+            
+            <!-- MITAD IZQUIERDA: Imagen Fija (Se queda quieta al hacer scroll) -->
+            <div class="col-lg-5 col-xl-6 sticky-image-pane">
+                <img src="img/burcin-ergunt-3AUjiNe1KcQ-unsplash.jpg" class="tall-image shadow-lg" alt="Hombres mayores trabajando en un taller mecánico">
+            </div>
+
+            <!-- MITAD DERECHA: Contenido (Desliza hacia abajo) -->
+            <div class="col-lg-7 col-xl-6 scrolling-content-pane">
+                
+                <h1 class="display-4 fw-bold mb-4">La Experiencia no Caduca</h1>
+                <p class="lead fs-4 text-muted border-bottom pb-4 mb-5">
+                    Replantear la matriz productiva: de la exclusión por edad a la integración de la sabiduría técnica.
+                </p>
+
+                <div class="content-block">
+                    <h2 class="fw-bold mb-4">El mito de la obsolescencia</h2>
+                    <p>El mercado laboral moderno suele estar obsesionado con la hiper-velocidad y la juventud, asumiendo erróneamente que la productividad disminuye irremediablemente con la edad. Sin embargo, esta visión descarta un factor invaluable: el criterio refinado, la paciencia resolutiva y la memoria institucional.</p>
+                    <p>Desplazar a profesionales, artesanos o trabajadores técnicos de sus oficios al llegar a cierta edad no solo es una pérdida económica para el país, sino una desconexión abrupta que precipita el aislamiento social y el deterioro cognitivo de quienes aún tienen mucho que aportar.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2 class="fw-bold mb-4">Mentoría y traspaso intergeneracional</h2>
+                    <p>La fuerza laboral no debe ser una competencia por desplazar a las generaciones anteriores, sino un ecosistema colaborativo. El modelo ideal de inclusión laboral para la tercera edad se basa en la <strong>mentoría activa</strong>.</p>
+                    <p>Al igual que en oficios tradicionales donde el "maestro" guía al aprendiz, las empresas modernas pueden reestructurar roles para que los trabajadores mayores reduzcan su carga física o de estrés crónico, asumiendo posiciones de supervisión de calidad, capacitación de nuevos talentos y consultoría interna. De este modo, la empresa gana en estabilidad y el trabajador conserva su red de propósito.</p>
+                </div>
+
+                <div class="content-block bg-light p-4 rounded border-start border-4 border-secondary">
+                    <h4 class="fw-bold mb-3">Rediseño de los espacios de trabajo</h4>
+                    <p class="mb-0">Acomodar a la tercera edad en el rubro productivo requiere empatía ergonómica. Así como proponemos "Calles a Dieta", las fábricas, oficinas y talleres deben adaptar su iluminación, herramientas y ritmos laborales. La inclusión genuina no es obligar al adulto mayor a competir como si tuviera 25 años, sino aprovechar sus facultades únicas en un entorno seguro y respetuoso.</p>
+                </div>
+
+                <!-- Footer incrustado al final del scroll -->
+                <footer class="mt-5 pt-5 border-top">
+                    <p class="small text-muted mb-1">Pieza medial para la evaluación: <strong>Chile un país que envejece</strong>.</p>
+                    <p class="small text-muted">Desarrollado por Geoffrey Pérez Cerda - PUCV</p>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
