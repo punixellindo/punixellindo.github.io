@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompañamiento Cotidiano | Vejeces en Chile</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .hero-section-subpage {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/acomp-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        .text-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .image-gallery img {
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CHILE ENVEJECE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Botón para volver atrás -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-warning" href="index.html">← Volver al Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section-subpage mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Acompañamiento Cotidiano</h1>
+            <p class="lead fs-4">La primera línea de defensa contra el aislamiento.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5 pb-4">
+
+        <!-- SECCIÓN 1: Imagen a la izquierda, Texto a la derecha -->
+        <div class="row mb-5 pb-4 align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/acomp-1.jpg" alt="Abuelo y nieto conversando" class="img-fluid rounded shadow w-100" style="object-fit: cover; height: 400px;">
+            </div>
+            <div class="col-md-6 text-column px-md-5">
+                <h2 class="mb-4">Más allá de la visita dominical</h2>
+                <p>El aislamiento no se soluciona únicamente con grandes eventos familiares esporádicos o visitas protocolares de fin de semana. La verdadera conexión se forja en la rutina, en la integración del adulto mayor a la dinámica diaria del hogar.</p>
+                <p>Escuchar activamente sus historias, pedirles consejos basados en su experiencia y hacerles partícipes de las decisiones familiares les devuelve el sentido de pertenencia y utilidad que la sociedad, a menudo, les arrebata.</p>
+            </div>
+        </div>
+
+        <hr class="text-muted my-5">
+
+        <!-- SECCIÓN 2: Texto a la izquierda, Imagen a la derecha -->
+        <div class="row mb-5 pb-4 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-md-6 text-column px-md-5">
+                <h2 class="mb-4">El valor de lo cotidiano</h2>
+                <p>El diálogo intergeneracional se materializa en los actos más sencillos de cuidado. No se trata solo de hacer compañía pasiva, sino de establecer dinámicas donde ambas partes interactúan y se apoyan mutuamente.</p>
+                <p>Un claro ejemplo de esto es el simple hecho de sentarse juntos a organizar la rutina de toma de medicamentos diarios. Revisar el pastillero, anotar los horarios en una pizarra o configurar alarmas deja de ser una tarea clínica y se transforma en un momento de conexión estructurado. Es un acto de responsabilidad compartida que estimula cognitivamente al adulto mayor y fortalece el vínculo afectivo.</p>
+            </div>
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/acomp-2.jpg" alt="Organizando medicamentos en familia" class="img-fluid rounded shadow w-100" style="object-fit: cover; height: 400px;">
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: Galería de imágenes visuales (Harto espacio para fotos) -->
+        <div class="mt-5 pt-4">
+            <h3 class="text-center mb-5 fw-bold">El impacto visual de la compañía</h3>
+            <div class="row image-gallery g-4">
+                <div class="col-md-4">
+                    <img src="img/acomp-galeria1.jpg" alt="Caminata en compañía" class="img-fluid rounded shadow-sm w-100" style="object-fit: cover; height: 300px;">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/acomp-galeria2.jpg" alt="Compartiendo un café" class="img-fluid rounded shadow-sm w-100" style="object-fit: cover; height: 300px;">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/acomp-galeria3.jpg" alt="Lectura compartida" class="img-fluid rounded shadow-sm w-100" style="object-fit: cover; height: 300px;">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">Pieza medial para la evaluación: <strong>Chile un país que envejece: una mirada comunicacional a un problema país</strong>.</p>
+            <p class="small text-muted mt-2">Desarrollado por Geoffrey Pérez Cerda - Pontificia Universidad Católica de Valparaíso (PUCV)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
